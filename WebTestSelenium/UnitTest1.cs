@@ -1,5 +1,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Support.UI;
 
 namespace WebTestSelenium
@@ -33,7 +34,7 @@ namespace WebTestSelenium
         [TestMethod]
         public void TestMethod()
         {
-            string url = "https://stringmanipulationoliver.azurewebsites.net";
+            string url = "https://stringmanipulationexam.azurewebsites.net";
             _driver.Navigate().GoToUrl(url);
 
             Assert.AreEqual("Document", _driver.Title);
